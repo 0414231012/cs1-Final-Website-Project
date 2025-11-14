@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(32, 28, 28);
+}
+.header {
+    color:whitesmoke;
+    font-family: Helvetica;
+}
+.header a {
+    color:whitesmoke;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 70px;
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
