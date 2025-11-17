@@ -2,16 +2,37 @@ body {
     background-color: rgb(32, 28, 28);
 }
 .header {
-    color:whitesmoke;
-    font-family: Helvetica;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 20px;
+    color: whitesmoke;
+    font-family: Helvetica, Arial, sans-serif;
 }
-.header a {
-    color:whitesmoke;
+
+.header h1 {
+    margin: 0;
+    margin-right: auto;
+    font-size: 32px;
+}
+
+.header a{
+    color: whitesmoke;
     text-decoration: none;
-    font-size: 30px;
-    margin: 70px;
+    font-size: 20px;
+    margin: 0;
     font-style: italic;
     font-weight: bold;
-    display: flex;
-    flex-direction: column;
+    padding: 6px 10px;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    padding: 20px;
+    color: whitesmoke;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
 }
