@@ -36,3 +36,20 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 18px;
 }
+
+.cards {
+    display: flex;
+    color: whitesmoke;
+    text-align: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+.card a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
