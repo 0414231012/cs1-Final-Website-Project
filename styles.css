@@ -1,13 +1,15 @@
 body {
+    margin: 0;
     background-color: rgb(32, 28, 28);
+    color: whitesmoke;
+    font-family: Helvetica, Arial, sans-serif;
 }
+
 .header {
     display: flex;
     align-items: center;
     gap: 16px;
     padding: 12px 20px;
-    color: whitesmoke;
-    font-family: Helvetica, Arial, sans-serif;
 }
 
 .header h1 {
@@ -16,24 +18,37 @@ body {
     font-size: 32px;
 }
 
-.header a{
+.header a {
+    display: inline-block;
     color: whitesmoke;
     text-decoration: none;
     font-size: 20px;
     margin: 0;
     font-style: italic;
     font-weight: bold;
-    padding: 6px 10px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: transform 120ms ease, background-color 120ms ease;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    transform: scale(1.08);
+    background-color: rgba(255,255,255,0.04);
+}
+
+.header a:active {
+    transform: scale(0.98);
+}
+
+/* underline the link for the current page */
+.header a.active {
+    background-color: rgba(255,255,255,0.06);
 }
 
 .main {
     padding: 20px;
-    color: whitesmoke;
-    font-family: Helvetica, Arial, sans-serif;
     font-size: 18px;
 }
 
@@ -44,6 +59,7 @@ body {
     justify-content: space-around;
     gap: 50px;
 }
+
 .card a {
     text-decoration: none;
     color: white;
@@ -52,4 +68,11 @@ body {
     font-size: 20px;
     padding: 10px;
     text-align: center;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.card a:hover {
+    background-color: darkred;
+    transform: scale(1.1);
 }
