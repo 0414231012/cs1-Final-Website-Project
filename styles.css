@@ -5,11 +5,32 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+ul {
+    font-size: 25px;
+}
+
+.content {
+    background-image: url('https://images.pexels.com/photos/58729/pexels-photo-58729.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    min-height: calc(100vh - 64px);
+    box-sizing: border-box;
+    
+}
+
+h2 {
+          text-shadow: 2px 2px 4px black;
+}
+
 .header {
     display: flex;
     align-items: center;
     gap: 16px;
     padding: 12px 20px;
+    position: sticky;
+    top: 0;
+    background-color:  rgb(44, 43, 43);
 }
 
 .header h1 {
@@ -50,6 +71,29 @@ body {
 .main {
     padding: 20px;
     font-size: 18px;
+    text-align: center;
+}
+
+.howtomain {
+    padding: 20px;
+    font-size: 18px;
+    gap: 20px;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 18px;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.step1, .step2, .step3, .step4, .step5, .step6 {
+    width: calc(33.33% - 14px);
+    margin-top: 30px;
 }
 
 .cards {
@@ -58,6 +102,14 @@ body {
     text-align: center;
     justify-content: space-around;
     gap: 50px;
+}
+
+.card {
+    background-color: rgb(50, 46, 46);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card a {
@@ -76,3 +128,4 @@ body {
     background-color: darkred;
     transform: scale(1.1);
 }
+
