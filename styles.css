@@ -16,11 +16,10 @@ ul {
     padding: 40px;
     min-height: calc(100vh - 64px);
     box-sizing: border-box;
-    
 }
 
 h2 {
-          text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 4px black;
 }
 
 .header {
@@ -30,7 +29,7 @@ h2 {
     padding: 12px 20px;
     position: sticky;
     top: 0;
-    background-color:  rgb(44, 43, 43);
+    background-color: rgb(44, 43, 43);
 }
 
 .header h1 {
@@ -56,7 +55,7 @@ h2 {
 .header a:hover {
     text-decoration: none;
     transform: scale(1.08);
-    background-color: rgba(255,255,255,0.04);
+    background-color: rgba(255, 255, 255, 0.04);
 }
 
 .header a:active {
@@ -65,7 +64,7 @@ h2 {
 
 /* underline the link for the current page */
 .header a.active {
-    background-color: rgba(255,255,255,0.06);
+    background-color: rgba(255, 255, 255, 0.06);
 }
 
 .main {
@@ -91,7 +90,12 @@ h2 {
     justify-content: center;
 }
 
-.step1, .step2, .step3, .step4, .step5, .step6 {
+.step1,
+.step2,
+.step3,
+.step4,
+.step5,
+.step6 {
     width: calc(33.33% - 14px);
     margin-top: 30px;
 }
@@ -129,3 +133,36 @@ h2 {
     transform: scale(1.1);
 }
 
+@media screen and (max-width: 768px) {
+
+    .step1,
+    .step2,
+    .step3,
+    .step4,
+    .step5,
+    .step6 {
+        width: 100%;
+    }
+}
+
+@keyframes ollie {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    30% {
+        transform: translateY(-20px) rotate(-5deg);
+    }
+
+    60% {
+        transform: translateY(-25px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+.skateboard-text:active {
+    animation: ollie 1s ease-out;
+}
