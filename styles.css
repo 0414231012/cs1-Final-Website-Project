@@ -143,6 +143,93 @@ h2 {
     .step6 {
         width: 100%;
     }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .main,
+    .howtomain {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    ul {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .header {
+        flex-wrap: wrap;
+        padding: 8px 16px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .header a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .main,
+    .howtomain {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .steps {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .step1,
+    .step2,
+    .step3,
+    .step4,
+    .step5,
+    .step6 {
+        margin-top: 15px;
+    }
+
+    ul {
+        font-size: 18px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card a {
+        font-size: 16px;
+        padding: 8px;
+    }
 }
 
 @keyframes ollie {
